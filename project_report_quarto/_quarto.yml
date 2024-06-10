@@ -1,0 +1,51 @@
+project:
+  output-dir: _output
+  
+pdf-engine: lualatex
+
+editor: source
+
+execute: 
+  echo: true
+  warning: false
+
+bibliography: references.bib
+csl: apa-annotated-bibliography_modified.csl
+
+link-citations: true
+citations-hover: true
+    
+crossref:
+  fig-prefix: Figure
+  fig-title: Figure
+  tbl-prefix: Table
+  tbl-title: Table
+  ref-hyperlink: true
+
+format:
+  pdf:
+    documentclass: article
+    papersize: A4
+    fontfamily: libertinus
+    colorlinks: true
+    margin-left:   25mm
+    margin-right:  25mm
+    margin-top:    25mm
+    margin-bottom: 20mm
+    fontsize: '11pt'
+    linestretch: 1.5
+    monofont: DejaVu Sans Mono
+    
+    include-in-header:
+      text: |
+        \usepackage{parcolumns}
+        \usepackage{mathtools}
+        \usepackage{enumitem}
+        \usepackage{hyperref}
+        \usepackage{geometry}
+        \usepackage{float}
+        \usepackage{fontspec}
+        \usepackage{sectsty}
+        \usepackage[super]{nth}
+        \usepackage{placeins}
+        \usepackage{wrapfig}
